@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aula virtual · Politécnico Manuel Acevedo Serrano</title>
+  <meta name="theme-color" content="#1c5aa8">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <script src="js/theme.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/views.css">
+  <link rel="stylesheet" href="css/dark.css">
+</head>
+<body class="app">
+  <div class="boot" id="boot"><img src="img/logo.png" alt=""><span class="spinner"></span></div>
+
+  <div class="shell" id="shell" hidden>
+    <aside class="sidebar" id="sidebar" aria-label="Menú principal">
+      <a class="brand" href="#/dashboard">
+        <img src="img/logo.png" alt="">
+        <span><b>Manuel Acevedo Serrano</b><small>Aula virtual</small></span>
+      </a>
+      <nav class="nav" id="nav"></nav>
+      <div class="side-foot">
+        <div class="motto">Espíritu y Servicio</div>
+        <div class="fya">Fe y Alegría · Cutupú, La Vega</div>
+      </div>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+
+    <div class="main">
+      <header class="topbar">
+        <button class="btn-icon menu-btn" id="menu-btn" aria-label="Abrir menú"></button>
+        <div class="crumb" id="crumb"></div>
+        <div class="top-actions">
+          <button class="btn-icon" id="theme-btn" aria-label="Cambiar tema claro u oscuro"></button>
+          <div class="dropdown" id="notif">
+            <button class="btn-icon" id="notif-btn" aria-label="Notificaciones" aria-haspopup="true" aria-expanded="false"><span id="notif-icon"></span><span class="dot" id="notif-dot" hidden></span></button>
+            <div class="menu menu-notif" id="notif-menu" hidden></div>
+          </div>
+          <div class="dropdown" id="usermenu">
+            <button class="user-btn" id="user-btn" aria-haspopup="true" aria-expanded="false"></button>
+            <div class="menu" id="user-menu" hidden></div>
+          </div>
+        </div>
+      </header>
+      <main class="content" id="view" tabindex="-1"></main>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/views/dashboard.js"></script>
+  <script src="js/views/courses.js"></script>
+  <script src="js/views/course.js"></script>
+  <script src="js/views/grades.js"></script>
+  <script src="js/views/admin.js"></script>
+  <script src="js/views/attendance.js"></script>
+  <script src="js/views/quizzes.js"></script>
+  <script src="js/views/calendar.js"></script>
+  <script src="js/views/report.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

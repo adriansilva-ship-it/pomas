@@ -1,0 +1,6 @@
+Flask>=3.0
+google-auth>=2.29
+requests>=2.31
+gunicorn>=22.0; platform_system != "Windows"
+waitress>=3.0; platform_system == "Windows"
+pytest>=8.0
